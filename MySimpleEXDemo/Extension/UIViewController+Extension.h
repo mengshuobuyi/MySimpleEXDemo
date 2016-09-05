@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIViewController+Extension.h
 //  MySimpleEXDemo
 //
 //  Created by codyy on 16/8/24.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface UIViewController (Extension)
 
 @end
-

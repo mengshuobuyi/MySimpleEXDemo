@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FilterManager">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cq4-0C-g1N">
+                    <rect key="frame" x="325" y="0.0" width="275" height="600"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AH5-Ri-RWt">
+                            <rect key="frame" x="0.0" y="0.0" width="138" height="600"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="UmR-vh-PZm"/>
+                                <outlet property="delegate" destination="-1" id="LkQ-5X-t8q"/>
+                            </connections>
+                        </tableView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="taj-4u-Vm7">
+                            <rect key="frame" x="138" y="0.0" width="137" height="600"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="qiZ-85-NJS"/>
+                                <outlet property="delegate" destination="-1" id="1kD-Jj-Enb"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="taj-4u-Vm7" firstAttribute="top" secondItem="cq4-0C-g1N" secondAttribute="top" id="2IG-rp-5va"/>
+                        <constraint firstItem="AH5-Ri-RWt" firstAttribute="top" secondItem="cq4-0C-g1N" secondAttribute="top" id="CPi-vj-TMY"/>
+                        <constraint firstAttribute="bottom" secondItem="AH5-Ri-RWt" secondAttribute="bottom" id="VqN-Qb-2yQ"/>
+                        <constraint firstAttribute="bottom" secondItem="taj-4u-Vm7" secondAttribute="bottom" id="XPB-80-RXI"/>
+                        <constraint firstItem="taj-4u-Vm7" firstAttribute="leading" secondItem="AH5-Ri-RWt" secondAttribute="trailing" id="ZmU-tK-65Y"/>
+                        <constraint firstItem="AH5-Ri-RWt" firstAttribute="leading" secondItem="cq4-0C-g1N" secondAttribute="leading" id="nR2-eR-RdY"/>
+                        <constraint firstItem="taj-4u-Vm7" firstAttribute="width" secondItem="AH5-Ri-RWt" secondAttribute="width" id="rOF-Sb-K97"/>
+                        <constraint firstAttribute="trailing" secondItem="taj-4u-Vm7" secondAttribute="trailing" id="s1g-De-cxn"/>
+                    </constraints>
+                </view>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUn-Ui-YlX">
+                    <rect key="frame" x="0.0" y="0.0" width="325" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="CMx-YO-e1V" appends="YES" id="MUW-pp-gOM"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cq4-0C-g1N" secondAttribute="trailing" id="5Mp-Aa-Qoc"/>
+                <constraint firstAttribute="bottom" secondItem="cq4-0C-g1N" secondAttribute="bottom" id="5S8-kO-lKk"/>
+                <constraint firstItem="GUn-Ui-YlX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5Vc-Ey-vdK"/>
+                <constraint firstAttribute="bottom" secondItem="GUn-Ui-YlX" secondAttribute="bottom" id="7hJ-tv-XWv"/>
+                <constraint firstItem="cq4-0C-g1N" firstAttribute="width" secondItem="GUn-Ui-YlX" secondAttribute="width" constant="-50" id="HHT-ej-8Rs"/>
+                <constraint firstItem="cq4-0C-g1N" firstAttribute="leading" secondItem="GUn-Ui-YlX" secondAttribute="trailing" id="Zd6-o1-EnH"/>
+                <constraint firstItem="GUn-Ui-YlX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="f5X-yJ-hX1"/>
+                <constraint firstItem="cq4-0C-g1N" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pwb-g2-pzb"/>
+            </constraints>
+            <connections>
+                <outlet property="mainTableView" destination="AH5-Ri-RWt" id="gNV-SB-h0s"/>
+                <outlet property="subTableView" destination="taj-4u-Vm7" id="Jk0-1P-fYO"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="CMx-YO-e1V">
+            <connections>
+                <action selector="tapAction:" destination="iN0-l3-epB" id="WBB-S1-B2s"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>
