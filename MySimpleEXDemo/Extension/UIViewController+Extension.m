@@ -7,7 +7,10 @@
 //
 
 #import "UIViewController+Extension.h"
-
+#import <objc/runtime.h>
 @implementation UIViewController (Extension)
-
++(void)load {
+//    Method originMethod = class_getInstanceMethod(self, @selector(dealloc));
+    
+}
 @end

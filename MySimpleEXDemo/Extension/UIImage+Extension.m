@@ -51,4 +51,16 @@
     return resultImage;
     
 }
+-(UIImage *)convertGrayImage:(UIImage *)originImage {
+    CGRect imageRect = CGRectMake(0, 0, originImage.size.width, originImage.size.height);
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
+    CGContextRef context = CGBitmapContextCreate(nil, originImage.size.width, originImage.size.height, 8, 0, colorSpace, kCGImageAlphaNone);
+    CGContextDrawImage(context, imageRect, [originImage CGImage]);
+    CGImageRef imageRef = CGBitmapContextCreateImage(context);
+    UIImage *newImage = [UIImage imageWithCGImage:imageRef];
+    CGColorSpaceRelease(colorSpace);
+    CGContextRelease(context);
+    CFRelease(imageRef);
+    return newImage;
+}
 @end

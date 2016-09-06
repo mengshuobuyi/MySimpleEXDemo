@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface TopSlideCollectionViewCell : UICollectionViewCell
-
+@property (weak, nonatomic) IBOutlet UILabel *title;
 @end

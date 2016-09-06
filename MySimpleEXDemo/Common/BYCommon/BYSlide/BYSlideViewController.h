@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BYSlideViewController : UIViewController
-
+@interface BYSlideViewController : BYBaseViewController
+-(void)addChildVC;
 @end

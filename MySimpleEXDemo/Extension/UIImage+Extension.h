@@ -30,4 +30,12 @@
  */
 + (UIImage *)circleImage:(UIImage *)originImage borderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth;
 
+/**
+ *  生成黑白图片
+ *
+ *  @param originImage 原始图片
+ *
+ *  @return 黑白图片
+ */
+-(UIImage *)convertGrayImage:(UIImage *)originImage;
 @end

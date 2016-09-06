@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TopSlideCollectionViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="88" height="40"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="88" height="40"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGD-e1-HuQ">
+                        <rect key="frame" x="10" y="5" width="68" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwD-PP-cwz">
+                                <rect key="frame" x="15" y="6" width="38" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nwD-PP-cwz" firstAttribute="centerY" secondItem="SGD-e1-HuQ" secondAttribute="centerY" id="aw0-nx-SUV"/>
+                            <constraint firstItem="nwD-PP-cwz" firstAttribute="centerX" secondItem="SGD-e1-HuQ" secondAttribute="centerX" id="guO-pL-Ciq"/>
+                        </constraints>
+                    </view>
+                </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <constraints>
+                <constraint firstItem="SGD-e1-HuQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="BSS-tI-UZ4"/>
+                <constraint firstAttribute="bottom" secondItem="SGD-e1-HuQ" secondAttribute="bottom" constant="5" id="EoG-vz-s0h"/>
+                <constraint firstItem="SGD-e1-HuQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Ytv-tj-1nl"/>
+                <constraint firstAttribute="trailing" secondItem="SGD-e1-HuQ" secondAttribute="trailing" constant="10" id="lq1-vf-Anp"/>
+            </constraints>
+            <size key="customSize" width="88" height="40"/>
+            <connections>
+                <outlet property="title" destination="nwD-PP-cwz" id="mvG-MX-NPV"/>
+            </connections>
+            <point key="canvasLocation" x="328" y="372"/>
         </collectionViewCell>
     </objects>
 </document>

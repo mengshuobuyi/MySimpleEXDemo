@@ -54,10 +54,10 @@
     UITableViewCell *cell;
     if (tableView == _mainTableView) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-        cell.textLabel.text = [NSString stringWithFormat:@"Cell-%d",indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"Cell-%ld",(long)indexPath.row];
     }else {
         cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-        cell.textLabel.text = [NSString stringWithFormat:@"Cell-%d",indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"Cell-%ld",(long)indexPath.row];
     }
     return cell;
 }
