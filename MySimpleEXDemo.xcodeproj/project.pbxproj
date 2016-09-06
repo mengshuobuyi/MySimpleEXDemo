@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4212E0101D766A6300E65EAD /* TestMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4212E00F1D766A6300E65EAD /* TestMasonryViewController.m */; };
 		421E00851D73E83E009FBE15 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 421E00841D73E83E009FBE15 /* HttpClient.m */; };
+		4296FBAB1D7EBA0100C0E63B /* NumberTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4296FBAA1D7EBA0100C0E63B /* NumberTool.m */; };
 		42E2110E1D6FD6F10080D28E /* FilterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E2110C1D6FD6F10080D28E /* FilterManager.m */; };
 		42E2110F1D6FD6F10080D28E /* FilterManager.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42E2110D1D6FD6F10080D28E /* FilterManager.xib */; };
 		42E211141D6FD74B0080D28E /* BYSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E211121D6FD74B0080D28E /* BYSlideViewController.m */; };
@@ -60,6 +61,8 @@
 		4212E00F1D766A6300E65EAD /* TestMasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestMasonryViewController.m; path = ViewControllers/TestMasonryViewController.m; sourceTree = "<group>"; };
 		421E00831D73E83E009FBE15 /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpClient.h; path = API/HttpClient.h; sourceTree = "<group>"; };
 		421E00841D73E83E009FBE15 /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpClient.m; path = API/HttpClient.m; sourceTree = "<group>"; };
+		4296FBA91D7EBA0100C0E63B /* NumberTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NumberTool.h; path = Tools/NumberTool.h; sourceTree = "<group>"; };
+		4296FBAA1D7EBA0100C0E63B /* NumberTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NumberTool.m; path = Tools/NumberTool.m; sourceTree = "<group>"; };
 		42E2110B1D6FD6F10080D28E /* FilterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FilterManager.h; path = Common/BYCommon/FilterManager/FilterManager.h; sourceTree = "<group>"; };
 		42E2110C1D6FD6F10080D28E /* FilterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FilterManager.m; path = Common/BYCommon/FilterManager/FilterManager.m; sourceTree = "<group>"; };
 		42E2110D1D6FD6F10080D28E /* FilterManager.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FilterManager.xib; path = Common/BYCommon/FilterManager/FilterManager.xib; sourceTree = "<group>"; };
@@ -288,6 +291,8 @@
 				42E89AA61D6D85AE009F80E5 /* UserDefaultTool.m */,
 				42E89AAC1D6D8B79009F80E5 /* TimeFammterTool.h */,
 				42E89AAD1D6D8B79009F80E5 /* TimeFammterTool.m */,
+				4296FBA91D7EBA0100C0E63B /* NumberTool.h */,
+				4296FBAA1D7EBA0100C0E63B /* NumberTool.m */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -591,6 +596,7 @@
 				42E89A901D6D68A2009F80E5 /* BYTabBarController.m in Sources */,
 				421E00851D73E83E009FBE15 /* HttpClient.m in Sources */,
 				42EA0BAE1D6E8819001B2075 /* UIView+Frame.m in Sources */,
+				4296FBAB1D7EBA0100C0E63B /* NumberTool.m in Sources */,
 				42E89AA71D6D85AE009F80E5 /* UserDefaultTool.m in Sources */,
 				42E89A8C1D6D4659009F80E5 /* UITableViewCell+Cate.m in Sources */,
 				42E89AAE1D6D8B79009F80E5 /* TimeFammterTool.m in Sources */,
