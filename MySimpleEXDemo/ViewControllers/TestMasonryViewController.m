@@ -14,6 +14,7 @@
 @property (strong,nonatomic)CAShapeLayer *eyeballLayer;
 @property (strong,nonatomic)CAShapeLayer *topEyesocketLayer;
 @property (strong,nonatomic)CAShapeLayer *bottomEyesocketLayer;
+@property (nonatomic,strong)dispatch_source_t timer;
 @end
 static CGSize size = {100,50};
 @implementation TestMasonryViewController
@@ -24,6 +25,7 @@ static CGSize size = {100,50};
 //    [self test2];
 //    [self test3];
 }
+
 //cashapeLayer 画图
 -(void)drawCircle {
     CAShapeLayer *cicleLayer = [CAShapeLayer layer];
@@ -63,7 +65,6 @@ static CGSize size = {100,50};
         make.top.equalTo(infoView);
         make.bottom.equalTo(infoView);
     }];
-    
     [info mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(name);
         make.left.equalTo(name.mas_right).with.offset(20);

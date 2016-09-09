@@ -38,6 +38,8 @@
 		42E89AA71D6D85AE009F80E5 /* UserDefaultTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E89AA61D6D85AE009F80E5 /* UserDefaultTool.m */; };
 		42E89AAE1D6D8B79009F80E5 /* TimeFammterTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E89AAD1D6D8B79009F80E5 /* TimeFammterTool.m */; };
 		42EA0BAE1D6E8819001B2075 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA0BAD1D6E8819001B2075 /* UIView+Frame.m */; };
+		42F8C24C1D81626600753635 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42F8C2491D81626600753635 /* MBProgressHUD.bundle */; };
+		42F8C24D1D81626600753635 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F8C24B1D81626600753635 /* MBProgressHUD.m */; };
 		9964AE2237E1AB6A5C2E94F0 /* Pods_MySimpleEXDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6681CBEB6EAC508B95945461 /* Pods_MySimpleEXDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +125,9 @@
 		42E89AAD1D6D8B79009F80E5 /* TimeFammterTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeFammterTool.m; path = Tools/TimeFammterTool.m; sourceTree = "<group>"; };
 		42EA0BAC1D6E8819001B2075 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "Extension/UIView+Frame.h"; sourceTree = "<group>"; };
 		42EA0BAD1D6E8819001B2075 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "Extension/UIView+Frame.m"; sourceTree = "<group>"; };
+		42F8C2491D81626600753635 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MBProgressHUD.bundle; path = Common/3rdLib/MBProgressHUD.bundle; sourceTree = "<group>"; };
+		42F8C24A1D81626600753635 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Common/3rdLib/MBProgressHUD.h; sourceTree = "<group>"; };
+		42F8C24B1D81626600753635 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = Common/3rdLib/MBProgressHUD.m; sourceTree = "<group>"; };
 		6681CBEB6EAC508B95945461 /* Pods_MySimpleEXDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySimpleEXDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B7D183B36EB952CF3353BD /* Pods-MySimpleEXDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySimpleEXDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySimpleEXDemo/Pods-MySimpleEXDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -395,6 +400,9 @@
 		42E89AB01D6D8BD1009F80E5 /* 3rdLib */ = {
 			isa = PBXGroup;
 			children = (
+				42F8C2491D81626600753635 /* MBProgressHUD.bundle */,
+				42F8C24A1D81626600753635 /* MBProgressHUD.h */,
+				42F8C24B1D81626600753635 /* MBProgressHUD.m */,
 			);
 			name = 3rdLib;
 			sourceTree = "<group>";
@@ -537,6 +545,7 @@
 				42E2110F1D6FD6F10080D28E /* FilterManager.xib in Resources */,
 				42E89A821D6D2D48009F80E5 /* Image.xcassets in Resources */,
 				42E2111A1D6FD7790080D28E /* TopSlideCollectionViewCell.xib in Resources */,
+				42F8C24C1D81626600753635 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +635,7 @@
 				42E89A8C1D6D4659009F80E5 /* UITableViewCell+Cate.m in Sources */,
 				42E89AAE1D6D8B79009F80E5 /* TimeFammterTool.m in Sources */,
 				4212E0101D766A6300E65EAD /* TestMasonryViewController.m in Sources */,
+				42F8C24D1D81626600753635 /* MBProgressHUD.m in Sources */,
 				42E2110E1D6FD6F10080D28E /* FilterManager.m in Sources */,
 				42E89AA01D6D7AD3009F80E5 /* RootViewController.m in Sources */,
 				420190551D7FE07700F1EA55 /* BouncePresentAnimation.m in Sources */,
